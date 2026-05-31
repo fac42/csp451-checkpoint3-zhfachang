@@ -28,41 +28,6 @@ keeps npm packages and GitHub Actions versions current.
    ```
    Then visit http://localhost:3000
 
-## API Endpoints
-
-### `GET /`
-
-Returns a welcome message.
-
-**Response:** `200 OK`
-
-```json
-{
-  "status": "ok",
-  "message": "Hello from CSP-451"
-}
-```
-
-### `GET /health`
-
-Health check endpoint that returns server status and uptime.
-
-**Response:** `200 OK`
-
-```json
-{
-  "status": "healthy",
-  "uptime": 42.567,
-  "timestamp": "2026-05-30T12:34:56.789Z"
-}
-```
-
-**Properties:**
-
-- `status` (string): Server health status ("healthy")
-- `uptime` (number): Process uptime in seconds since start
-- `timestamp` (string): ISO 8601 UTC timestamp of response
-
 ## Continuous Integration
 
 This repository ships with two workflows:
