@@ -31,9 +31,11 @@ keeps npm packages and GitHub Actions versions current.
 ## API Endpoints
 
 ### `GET /`
+
 Returns a welcome message.
 
 **Response:** `200 OK`
+
 ```json
 {
   "status": "ok",
@@ -42,9 +44,11 @@ Returns a welcome message.
 ```
 
 ### `GET /health`
+
 Health check endpoint that returns server status and uptime.
 
 **Response:** `200 OK`
+
 ```json
 {
   "status": "healthy",
@@ -54,6 +58,7 @@ Health check endpoint that returns server status and uptime.
 ```
 
 **Properties:**
+
 - `status` (string): Server health status ("healthy")
 - `uptime` (number): Process uptime in seconds since start
 - `timestamp` (string): ISO 8601 UTC timestamp of response
