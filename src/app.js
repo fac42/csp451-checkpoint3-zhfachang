@@ -7,11 +7,9 @@ app.get("/", (req, res) => {
 });
 
 app.get("/health", (req, res) => {
-  res.status(200).json({
-    status: "healthy",
-    uptime: process.uptime(),
-    timestamp: new Date().toISOString(),
-  });
+  res
+    .status(200)
+    .json({ status: "healthy", uptime: process.uptime(), timestamp: new Date().toISOString() });
 });
 
 module.exports = app;
