@@ -6,12 +6,7 @@ app.get("/", (req, res) => {
   res.json({ status: "ok", message: "Hello from CSP-451" });
 });
 
-app.get("/health", (req, res) => {
-  res.status(200).json({
-    status: "healthy",
-    uptime: process.uptime(),
-    timestamp: new Date().toISOString(),
-  });
+app.get("/health", (req, res) => { res.status(200).json({ status: "healthy", uptime: process.uptime(), timestamp: new Date().toISOString(),});
 });
 
 module.exports = app;
